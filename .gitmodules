@@ -1,3 +1,3 @@
-[submodule "Example/Example/SQLiteDB"]
-	path = Example/Example/SQLiteDB
+[submodule "Example/SQLiteDB"]
+	path = Example/SQLiteDB
 	url = https://github.com/quells/SQLiteDB
