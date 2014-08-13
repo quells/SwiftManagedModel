@@ -176,3 +176,7 @@ Contributions are welcome! This is pretty rough.
 - NSDictionary is not handled.
 
 ## Version History
+
+### 0.1
+
+- Initial commit.
