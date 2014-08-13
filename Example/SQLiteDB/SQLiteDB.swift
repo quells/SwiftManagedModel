@@ -23,7 +23,7 @@ Possible Value Types:
 - Date
 - Null
 */
-public class SQLColumn {
+public class SQLColumn: Printable {
     
     private var _value: AnyObject! = nil
     private var _type: CInt = -1
@@ -131,13 +131,13 @@ public class SQLColumn {
         case Double, Text, Data, Null, Date, Unknown
         public var description: String {
             switch self {
-            case Integer: return "Integer"
-            case Double: return "Double"
-            case Data: return "Data"
-            case Null: return "Null"
-            case Date: return "Date"
-            default: return "Text"
-                }
+                case Integer: return "Integer"
+                case Double: return "Double"
+                case Data: return "Data"
+                case Null: return "Null"
+                case Date: return "Date"
+                default: return "Text"
+            }
         }
     }
     
@@ -145,6 +145,10 @@ public class SQLColumn {
         get {
             return Type.fromRaw(_type)!
         }
+    }
+    
+    public var description: String {
+        return "<\(self.type.description): \(self.value)>"
     }
     
 }

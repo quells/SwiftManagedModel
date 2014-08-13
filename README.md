@@ -21,15 +21,16 @@ It's built on [Fahim Farook's SQLiteDB](https://github.com/FahimF/SQLiteDB) with
 ### Requirements
 
 - Xcode 6 - Beta 5 (Swift is still in flux, so it's not guaranteed to work in any earlier or later builds. The *undocumented* mirroring API (and other things) may have breaking changes in Beta 6 and later.)
-- Deployment on iOS 7 or above (for Swift compatibility) (maybe it works on Mac OS X - haven't test that)
-- [SQLiteDB](https://github.com/FahimF/SQLiteDB) (included)
+- Deployment on iOS 7 or above (for Swift compatibility) (OS X is not supported)
+- [My Fork](https://github.com/quells/SQLiteDB) of SQLiteDB
 - Linking your project with `sqlite3`
 
 ### Adding to Your Project
 
-1. Add / copy all of the included source files to your project.
+1. Add / copy all of the source files from SQLiteDB to your project.
 2. Use the included `Bridging-Header.h` ("Objective-C Bridging Header" in your project's "Build Settings"), or link to it in your own.
 3. Link the SQLite library (`libsqlite3.0.dylib`) to your project.
+4. Add / copy `Model.swift` and `DatabaseController.swift` to your project.
 
 ### Documentation
 
@@ -167,5 +168,11 @@ Contributions are welcome! This is pretty rough.
 ## License
 
 `Model.swift` and `DataController.swift` are released under an [MIT License](https://github.com/quells/SwiftManagedModel/blob/master/LICENSE). SQLiteDB and associated files are released under a DWYWPL by [Fahim Farook](https://github.com/FahimF/SQLiteDB).
+
+## Known Issues
+
+- Very slow for more than a handful of objects. The current method for adding objects scales linearly up to 1000 inserts, which took ~80 seconds on an iPhone 5S. This can probably be greatly improved by coalescing database writes.
+- NSData blobs are not handled.
+- NSDictionary is not handled.
 
 ## Version History
