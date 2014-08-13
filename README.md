@@ -3,7 +3,7 @@ Swift Managed Model
 
 An alternative to Core Data written in Swift.
 
-By [Kai Wells](http://kaiwells.me). Released under the [MIT License](https://github.com/quells/SwiftManagedModel/blob/master/LICENSE.md) (at least `Model.swift` and `DataController.swift` are - SQLiteDB is under DWYWPL).
+By [Kai Wells](http://kaiwells.me). Released under the [MIT License](https://github.com/quells/SwiftManagedModel/blob/master/LICENSE) (at least `Model.swift` and `DataController.swift` are - SQLiteDB is under DWYWPL).
 
 Inspired by [Marco Arment's FCModel](https://github.com/marcoarment/FCModel), but implemented in Swift and with most of the SQL hidden away / auto-generated. So not really like FCModel at all. But you can also run arbitrary SQL commands as you please!
 
@@ -166,6 +166,6 @@ Contributions are welcome! This is pretty rough.
 
 ## License
 
-`Model.swift` and `DataController.swift` are released under an [MIT License](https://github.com/quells/SwiftManagedModel/blob/master/LICENSE.md). SQLiteDB and associated files are released under a DWYWPL by [Fahim Farook](https://github.com/FahimF/SQLiteDB).
+`Model.swift` and `DataController.swift` are released under an [MIT License](https://github.com/quells/SwiftManagedModel/blob/master/LICENSE). SQLiteDB and associated files are released under a DWYWPL by [Fahim Farook](https://github.com/FahimF/SQLiteDB).
 
 ## Version History
