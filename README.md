@@ -1,7 +1,7 @@
 Swift Managed Model
 ===================
 
-An alternative to Core Data written in Swift.
+An alternative to Core Data written in Swift. **BROKEN SINCE XCODE 6 BETA 6**
 
 By [Kai Wells](http://kaiwells.me). Released under the [MIT License](https://github.com/quells/SwiftManagedModel/blob/master/LICENSE) (at least `Model.swift` and `DataController.swift` are - SQLiteDB is under DWYWPL).
 
